@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#855EF3</color>
+    <color name="colorPrimaryDark">#7C4DFF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--library-->
+    <color name="black_dark">#333333</color>
+    <color name="grey_dark">#6C6C6C</color>
+    <color name="grey_light">#a3a3a3</color>
+    <color name="grey_light_alpha">#D0AAA9A9</color>
+    <color name="dark_black">#182C3E</color>
+    <color name="grey">#C4C0C0</color>
+    <color name="light_black">#918888</color>
+
+    <color name="light_grey">#A3EFE9E9</color>
+    <color name="orange_text">#FE865B</color>
+    <color name="start_button_color">#FE865B</color>
+    <color name="end_button_color">#FF5839</color>
+    <color name="white">#FFFF</color>
+    <color name="white_alpha">#CEFFFFFF</color>
+    <color name="snackbar_message">#FEFEFE</color>
+    <color name="snackbar_background_positive">#26A3DB</color>
+    <color name="snackbar_background_negative">#FCB033</color>
+    <color name="button_background">#ffefe9</color>
+    <color name="gray_btn_bg_color_alpha">#77D0D0D0</color>
+    <color name="card_bg_color">#E9FDDDD6</color>
+</resources>

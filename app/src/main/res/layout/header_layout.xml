@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:elevation="@dimen/_2sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:tint="@color/colorPrimaryDark"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_left_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivOpenNav"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:tint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_open_menu" />
+
+        <app.kiran.siddhivinayak_ent.uc.CustomTextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Header title"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp"
+            app:custom_font="semibold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <app.kiran.siddhivinayak_ent.uc.CustomTextView
+            android:id="@+id/ivAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Add"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableEnd="@drawable/img_add"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp"
+            android:drawableTint="@color/colorPrimaryDark"
+            app:custom_font="semibold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <app.kiran.siddhivinayak_ent.uc.CustomTextView
+                        android:id="@+id/tvCustomerList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Customer List"
+                        android:textColor="@color/black_dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:custom_font="semibold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/customerCardImage"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/cardCustomerName"
+                app:layout_constraintEnd_toStartOf="@id/cardCustomerName"
+                app:layout_constraintStart_toStartOf="@id/cardCustomerName"
+                app:layout_constraintTop_toTopOf="@id/cardCustomerName">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCustomerCard"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/img_shop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTotalSales"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/cardCustomerName">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <app.kiran.siddhivinayak_ent.uc.CustomTextView
+                        android:id="@+id/tvTotalSalesList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Total Sales"
+                        android:textColor="@color/black_dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:custom_font="semibold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTotalSalesCardImage"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/cardTotalSales"
+                app:layout_constraintEnd_toStartOf="@id/cardTotalSales"
+                app:layout_constraintStart_toStartOf="@id/cardTotalSales"
+                app:layout_constraintTop_toTopOf="@id/cardTotalSales">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivTotalSalesCard"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/img_shop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLedger"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/cardTotalSales">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <app.kiran.siddhivinayak_ent.uc.CustomTextView
+                        android:id="@+id/tvLedgerList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Ledger"
+                        android:textColor="@color/black_dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:custom_font="semibold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/LedgerCardImage"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/cardLedger"
+                app:layout_constraintEnd_toStartOf="@id/cardLedger"
+                app:layout_constraintStart_toStartOf="@id/cardLedger"
+                app:layout_constraintTop_toTopOf="@id/cardLedger">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivTotalOrderCard"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/img_shop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardOutStanding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardLedger">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <app.kiran.siddhivinayak_ent.uc.CustomTextView
+                        android:id="@+id/tvOutStandingList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Out Standing"
+                        android:textColor="@color/black_dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:custom_font="semibold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/OutStandingCardImage"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/cardOutStanding"
+                app:layout_constraintEnd_toStartOf="@id/cardOutStanding"
+                app:layout_constraintStart_toStartOf="@id/cardOutStanding"
+                app:layout_constraintTop_toTopOf="@id/cardOutStanding">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivOutStandingCard"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/img_shop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

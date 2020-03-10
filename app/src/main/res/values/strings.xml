@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SiddhiVinayak</string>
+    <string name="subtype_not_available">Subtype: Not Available</string>
+    <string name="subtype_value">Subtype: %s</string>
+
+
+    <string name="loading">Loading…</string>
+    <string name="No_internet_available">No internet available!</string>
+    <string name="Oops">Opps.</string>
+    <string name="something_went_working">"Something went wrong!"</string>
+    <string name="session_expired_please_login_again">Session expired please login again</string>
+    <string name="login">login</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_login">Login</string>
+    <string name="hint_enter_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="error_enter_email">Please enter the email</string>
+    <string name="error_enter_valid_email">Please enter valid email</string>
+    <string name="error_enter_password">Please enter password</string>
+    <string name="error_enter_password_long">Password must be 6 character long</string>
+</resources>

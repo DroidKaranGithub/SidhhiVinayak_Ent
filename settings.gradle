@@ -1,0 +1,3 @@
+rootProject.name='SiddhiVinayak'
+include ':app'
+include ':dialogLibrary'

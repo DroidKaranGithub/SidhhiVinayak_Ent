@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="snackbar_minimum_height">48dp</dimen>
+    <dimen name="snackbar_text_size">18sp</dimen>
+    <item name="selected_bt_alpha" format="float" type="dimen">1.0</item>
+    <dimen name="unselected_bt_alpha" format="float" type="dimen">0.3</dimen>
+    <dimen name="allLeftMargin"  type="dimen">16dp</dimen>
+    <dimen name="allRightMargin" type="dimen">16dp</dimen>
+</resources>
